@@ -34,12 +34,7 @@
     .card:hover {
       transform: translateY(-5px);
     }
-    .avatar {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-    }
+    
     .name {
       font-size: 1.2rem;
       font-weight: bold;
@@ -66,13 +61,13 @@
         name: "Eldin Rajbhandari",
         role: "Frontend Developer",
         bio: "Specializes in responsive design and UI/UX.",
-        avatar: ""
+       
       },
       {
         name: "Swopnil Khadka",
         role: "Backend Developer",
         bio: "Expert in databases and server-side logic.",
-        avatar: ""
+        
       },
       {
         name: "Bijay Magar",
@@ -84,13 +79,13 @@
         name: "Surya Bahdaur Kc",
         role: "UI Designer",
         bio: "Designs sleek, user-friendly interfaces.",
-        avatar: ""
+       
       },
       {
         name: "Swopnil Shreesh",
         role: "QA Engineer",
         bio: "Ensures top quality with thorough testing.",
-        avatar: ""
+        
       }
     ];
 
