@@ -75,7 +75,7 @@
         avatar: ""
       },
       {
-        name: "Bijay Gharti",
+        name: "Bijay Magar",
         role: "Project Manager",
         bio: "Keeps projects on track and under budget.",
         avatar: ""
