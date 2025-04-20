@@ -75,7 +75,7 @@
 <h2>Eldin Rajbhandari</h2>
 <p>Frontend Developer and Backend Developer</p>
 <button onclick="showMore('person1')">More Info</button>
-<p id="person1" class="hidden">Specializes in HTML, CSS, and React.</p>
+<p id="person1" class="hidden">The Creator </p>
 </div>
 <div class="card">
 <img src="https://via.placeholder.com/150" alt="Person 2" />
