@@ -18,16 +18,7 @@
       color: #fff;
       padding: 1rem 0;
     }
-    #darkModeBtn{
-    padding: 0.5rem 1rem;
-    color:white;
-    border:none;
-    border-radius: 4px;
-    cursor: pointer;
-    }
-    #darkModeBtn:hover{
-    background: #666;
-    }
+    
     .portfolio {
       display: flex;
       flex-wrap: wrap;
@@ -35,8 +26,13 @@
       gap: 1.5rem;
       padding: 2rem;
     }
-
-    .card {
+    .card{
+    transition: transform 0.3s,box-shadow 0.3s;
+    }
+    .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
       background: white;
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -117,9 +113,7 @@
       const element = document.getElementById(id);
       element.classList.toggle("hidden");
     }
-    function toggleDarkMode() {
-        document.body.classlist.toggle("dark");
-        }
+   
 </script>
 </body>
 </html>
