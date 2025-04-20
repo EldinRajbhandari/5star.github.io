@@ -72,7 +72,8 @@
       {
         name: "Bijay Magar",
         role: "Project Manager",
-        bio: "Keeps projects on track and under budget.",
+        bio: "Keeps projects on track and under budget.
+        And Loves Roji ",
       
       },
       {
