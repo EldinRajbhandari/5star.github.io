@@ -95,7 +95,6 @@
       const card = document.createElement("div");
       card.className = "card";
       card.innerHTML = `
-<img class="avatar" src="${member.avatar}" alt="${member.name}" />
 <div class="name">${member.name}</div>
 <div class="role">${member.role}</div>
 <div class="bio">${member.bio}</div>
