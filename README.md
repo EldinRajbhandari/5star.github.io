@@ -1,105 +1,112 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Team Portfolio</title>
 <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
     body {
       font-family: Arial, sans-serif;
-      background: #f0f2f5;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+    }
+
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
       padding: 2rem;
     }
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .team {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
+
     .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      padding: 1.5rem;
-      text-align: center;
-      transition: transform 0.3s;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      width: 200px;
     }
-    .card:hover {
-      transform: translateY(-5px);
+
+    .card img {
+      width: 100%;
+      border-radius: 50%;
     }
-    
-    .name {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
+
+    .card button {
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
     }
-    .role {
-      font-size: 1rem;
-      color: #777;
-      margin-bottom: 1rem;
+
+    .card button:hover {
+      background: #0056b3;
     }
-    .bio {
-      font-size: 0.9rem;
-      color: #555;
+
+    .hidden {
+      display: none;
     }
 </style>
 </head>
 <body>
-<h1>5 Stars</h1>
-<div class="team" id="team-container">
-<!-- Cards will be inserted here -->
-</div><script>
-    const teamMembers = [
-      {
-        name: "Eldin Rajbhandari",
-        role: "Frontend Developer",
-        bio: "Specializes in responsive design and UI/UX.",
-       
-      },
-      {
-        name: "Swopnil Khadka",
-        role: "Backend Developer",
-        bio: "Expert in databases and server-side logic.",
-        
-      },
-      {
-        name: "Bijay Magar",
-        role: "Project Manager",
-        bio: "Keeps projects on track and under budget",
-      
-      },
-      {
-        name: "Surya Bahdaur Kc",
-        role: "UI Designer",
-        bio: "Designs sleek, user-friendly interfaces.",
-       
-      },
-      {
-        name: "Swopnil Shreesh",
-        role: "QA Engineer",
-        bio: "Ensures top quality with thorough testing.",
-        
-      }
-    ];
-
-    const container = document.getElementById("team-container");
-
-    teamMembers.forEach(member => {
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
-<div class="name">${member.name}</div>
-<div class="role">${member.role}</div>
-<div class="bio">${member.bio}</div>
-      `;
-      container.appendChild(card);
-    });
+<header>
+<h1>5 Star</h1>
+</header>
+<main>
+<section class="portfolio">
+<div class="card">
+<img src="https://via.placeholder.com/150" alt="Person 1" />
+<h2>Eldin Rajbhandari</h2>
+<p>Frontend Developer and Backend Developer</p>
+<button onclick="showMore('person1')">More Info</button>
+<p id="person1" class="hidden">Specializes in HTML, CSS, and React.</p>
+</div>
+<div class="card">
+<img src="https://via.placeholder.com/150" alt="Person 2" />
+<h2>Bijay Magar</h2>
+<p></p>
+<button onclick="showMore('person2')">More Info</button>
+<p id="person2" class="hidden">Expert in Node.js and MongoDB.</p>
+</div>
+<div class="card">
+<img src="https://via.placeholder.com/150" alt="Person 3" />
+<h2>Surya Bahadur KC</h2>
+<p></p>
+<button onclick="showMore('person3')">More Info</button>
+<p id="person3" class="hidden">Focuses on user-centered design and prototyping.</p>
+</div>
+<div class="card">
+<img src="https://via.placeholder.com/150" alt="Person 4" />
+<h2>Swopnil Khadka</h2>
+<p></p>
+<button onclick="showMore('person4')">More Info</button>
+<p id="person4" class="hidden">Manages team workflow and client communication.</p>
+</div>
+<div class="card">
+<img src="https://via.placeholder.com/150" alt="Person 5" />
+<h2>Swopnil Shreesh</h2>
+<p></p>
+<button onclick="showMore('person5')">More Info</button>
+<p id="person5" class="hidden">Ensures software quality and performance.</p>
+</div>
+</section>
+</main>
+<script>
+    function showMore(id) {
+      const element = document.getElementById(id);
+      element.classList.toggle("hidden");
+    }
 </script>
-
+</body>
+</html>
