@@ -52,7 +52,7 @@
 </style>
 </head>
 <body>
-<h1>5 Stars/h1>
+<h1>5 Stars</h1>
 <div class="team" id="team-container">
 <!-- Cards will be inserted here -->
 </div><script>
@@ -73,7 +73,7 @@
         name: "Bijay Magar",
         role: "Project Manager",
         bio: "Keeps projects on track and under budget.",
-        avatar: ""
+      
       },
       {
         name: "Surya Bahdaur Kc",
@@ -103,5 +103,4 @@
       container.appendChild(card);
     });
 </script>
-</body>
-</html>
+
