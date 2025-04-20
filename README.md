@@ -67,7 +67,6 @@
 <body>
 <header>
 <h1>5 Star</h1>
-    <button onclick="toggleDarkMode()" id="darkModeBtn">Toggle Dark Mode</button>
 </header>
 <main>
 <section class="portfolio">
