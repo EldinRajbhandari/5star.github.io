@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Team Portfolio</title>
+<title>5 Star</title>
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
