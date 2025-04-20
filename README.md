@@ -18,7 +18,16 @@
       color: #fff;
       padding: 1rem 0;
     }
-
+    #darkModeBtn{
+    padding: 0.5rem 1rem;
+    color:white;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    #darkModeBtn:hover{
+    background: #666;
+    }
     .portfolio {
       display: flex;
       flex-wrap: wrap;
@@ -62,6 +71,7 @@
 <body>
 <header>
 <h1>5 Star</h1>
+    <button onclick="toggleDarkMode()" id="darkModeBtn">Toggle Dark Mode</button>
 </header>
 <main>
 <section class="portfolio">
