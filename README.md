@@ -117,6 +117,9 @@
       const element = document.getElementById(id);
       element.classList.toggle("hidden");
     }
+    function toggleDarkMode() {
+        document.body.classlist.toggle("dark");
+        }
 </script>
 </body>
 </html>
