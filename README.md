@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -57,40 +57,40 @@
 </style>
 </head>
 <body>
-<h1>Our Team</h1>
+<h1>5 Stars/h1>
 <div class="team" id="team-container">
 <!-- Cards will be inserted here -->
 </div><script>
     const teamMembers = [
       {
-        name: "Alice Johnson",
+        name: "Eldin Rajbhandari",
         role: "Frontend Developer",
         bio: "Specializes in responsive design and UI/UX.",
-        avatar: "https://i.pravatar.cc/100?img=1"
+        avatar: ""
       },
       {
-        name: "Bob Smith",
+        name: "Swopnil Khadka",
         role: "Backend Developer",
         bio: "Expert in databases and server-side logic.",
-        avatar: "https://i.pravatar.cc/100?img=2"
+        avatar: ""
       },
       {
-        name: "Carla Gomez",
+        name: "Bijay Gharti",
         role: "Project Manager",
         bio: "Keeps projects on track and under budget.",
-        avatar: "https://i.pravatar.cc/100?img=3"
+        avatar: ""
       },
       {
-        name: "David Lee",
+        name: "Surya Bahdaur Kc",
         role: "UI Designer",
         bio: "Designs sleek, user-friendly interfaces.",
-        avatar: "https://i.pravatar.cc/100?img=4"
+        avatar: ""
       },
       {
-        name: "Eva Chen",
+        name: "Swopnil Shreesh",
         role: "QA Engineer",
         bio: "Ensures top quality with thorough testing.",
-        avatar: "https://i.pravatar.cc/100?img=5"
+        avatar: ""
       }
     ];
 
