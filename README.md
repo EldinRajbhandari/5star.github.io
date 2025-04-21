@@ -153,7 +153,7 @@
 </head>
 <body>
   <header>
-    <h1>5 Star</h1>
+    <h1>5 Stars</h1>
   </header>
   <main>
     <section class="portfolio">
