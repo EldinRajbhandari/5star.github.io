@@ -177,11 +177,14 @@
 
     <section class="contact">
       <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+      <form
+  action="https://formspree.io/f/mldbrnwb"
+  method="POST"
+>
+<input type="text" name="name" placeholder="Your name" required/>
+<input type="email" name="email" placeholder="Your Email" required/>
+<textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
       </form>
     </section>
   </main>
