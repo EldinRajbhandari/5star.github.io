@@ -144,7 +144,7 @@
         <p id="person2" class="hidden">Expert in Node.js and MongoDB.</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Person 3" />
+        <img src="file:///C:/Users/USER/Desktop/download.jpg" alt="Person 3" />
         <h2>Surya Bahadur KC</h2>
         <p></p>
         <div class="social-icons">
