@@ -129,7 +129,7 @@
           <a href="https://www.instagram.com/eldin_rajbhandari?igsh=MWd3dzh0ZWxjcnV6ag=="><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person1')">More Info</button>
-        <p id="person1" class="hidden">Specializes in HTML, CSS, and React.</p>
+        <p id="person1" class="hidden">Specializes in HTML, CSS, and JS.</p>
       </div>
       <div class="card">
        
@@ -139,12 +139,12 @@
           <a href="https://www.instagram.com/bijaygharti_?igsh=MWl6NGxhNzZlbGptNw=="><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person2')">More Info</button>
-        <p id="person2" class="hidden">Expert in Node.js and MongoDB.</p>
+        <p id="person2" class="hidden">Expert in Nothing</p>
       </div>
       <div class="card">
         
         <h2>Surya Bahadur KC</h2>
-        <p></p>
+        <p>Website Designer</p>
         <div class="social-icons">
           <a href="https://www.instagram.com/ukesh__cheetri?igsh=d3BjYmJzcTJmbTYy"><i class="fab fa-instagram"></i></a>
         </div>
@@ -152,7 +152,7 @@
         <p id="person3" class="hidden">Focuses on user-centered design and prototyping.</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Person 4" />
+     
         <h2>Swopnil Khadka</h2>
         <p></p>
         <div class="social-icons">
