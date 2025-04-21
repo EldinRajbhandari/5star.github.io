@@ -206,7 +206,7 @@
         <h2>Swopnil Shreesh</h2>
         <p></p>
         <div class="social-icons">
-          <a href=https://www.instagram.com/swopnil_shreesh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/swopnil_shreesh?igsh=MWpkazF2YmRqbnJ4cg=="><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person5')">More Info</button>
         <p id="person5" class="hidden">Ensures software quality and performance.</p>
