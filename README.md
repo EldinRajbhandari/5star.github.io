@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -12,6 +13,7 @@
       padding: 0;
       text-align: center;
     }
+
     header {
       background: #333;
       color: #fff;
@@ -20,6 +22,7 @@
       align-items: center;
       padding: 1rem 2rem;
     }
+
     .portfolio {
       display: flex;
       flex-wrap: wrap;
@@ -27,58 +30,73 @@
       gap: 1.5rem;
       padding: 2rem;
     }
+
     .card {
       background: white;
       border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       padding: 1rem;
       width: 220px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       animation: fadeInUp 0.8s ease forwards;
       opacity: 0;
     }
-    .card:hover{
-        transform: translateY(-10px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
+
     @keyframes fadeInUp {
-        from{
-            opacity: 0;
-            transform: translateY(0);
-        } 
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .card img{
-        width: 100%;
-        border-radius: 50%;
+
+    .card img {
+      width: 100%;
+      border-radius: 50%;
     }
-    .card button{
-        margin-top: 0.5rem;
-        padding: 0.5rem 1rem;
-        background: #007bff;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
+
+    .card button {
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
     }
-    .card button:hover{
-        background-color: #0056b3;
+
+    .card button:hover {
+      background: #0056b3;
     }
+
     .social-icons a {
       margin: 0 5px;
       color: #333;
       text-decoration: none;
       font-size: 1.2rem;
     }
+
     .social-icons a:hover {
-      color: #e1306c; /* Instagram color */
+      color: #e1306c;
     }
+
     .hidden {
       display: none;
     }
+
     .contact {
       padding: 2rem;
       background: #f1f1f1;
     }
+
     .contact form {
       max-width: 400px;
       margin: 0 auto;
@@ -86,11 +104,13 @@
       flex-direction: column;
       gap: 1rem;
     }
+
     .contact input, .contact textarea {
       padding: 0.8rem;
       border-radius: 5px;
       border: 1px solid #ccc;
     }
+
     .contact button {
       padding: 0.8rem;
       background: #28a745;
@@ -99,9 +119,11 @@
       border-radius: 5px;
       cursor: pointer;
     }
+
     .contact button:hover {
       background: #218838;
     }
+
     footer {
       background: #222;
       color: #ccc;
@@ -131,55 +153,60 @@
 </head>
 <body>
   <header>
-    <h1>5 Stars</h1>
+    <h1>5 Star</h1>
   </header>
   <main>
     <section class="portfolio">
       <div class="card">
+        <img src="eldin.jpg" alt="Eldin Rajbhandari" />
         <h2>Eldin Rajbhandari</h2>
         <p>Frontend Developer and Backend Developer</p>
         <div class="social-icons">
-          <a href="https://www.instagram.com/eldin_rajbhandari?igsh=MWd3dzh0ZWxjcnV6ag=="><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person1')">More Info</button>
-        <p id="person1" class="hidden">Specializes in HTML, CSS, and JS.</p>
+        <p id="person1" class="hidden">Specializes in HTML, CSS, and React.</p>
       </div>
+
       <div class="card">
-       
+        <img src="bijay.jpg" alt="Bijay Magar" />
         <h2>Bijay Magar</h2>
-        <p>Project Manger</p>
+        <p></p>
         <div class="social-icons">
-          <a href="https://www.instagram.com/bijaygharti_?igsh=MWl6NGxhNzZlbGptNw=="><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person2')">More Info</button>
-        <p id="person2" class="hidden">Expert in Nothing</p>
+        <p id="person2" class="hidden">Expert in Node.js and MongoDB.</p>
       </div>
+
       <div class="card">
-        
+        <img src="surya.jpg" alt="Surya Bahadur KC" />
         <h2>Surya Bahadur KC</h2>
-        <p>Website Designer</p>
+        <p></p>
         <div class="social-icons">
-          <a href="https://www.instagram.com/ukesh__cheetri?igsh=d3BjYmJzcTJmbTYy"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person3')">More Info</button>
         <p id="person3" class="hidden">Focuses on user-centered design and prototyping.</p>
       </div>
+
       <div class="card">
-     
+        <img src="swopnil_k.jpg" alt="Swopnil Khadka" />
         <h2>Swopnil Khadka</h2>
         <p></p>
         <div class="social-icons">
-          <a href="https://www.instagram.com/swopnil__09?igsh=MXgxaGQ3OWEwNjFjaw=="><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person4')">More Info</button>
         <p id="person4" class="hidden">Manages team workflow and client communication.</p>
       </div>
-      <div class="card">
 
+      <div class="card">
+        <img src="swopnil_s.jpg" alt="Swopnil Shreesh" />
         <h2>Swopnil Shreesh</h2>
         <p></p>
         <div class="social-icons">
-          <a href="https://www.instagram.com/swopnil_shreesh?igsh=MWpkazF2YmRqbnJ4cg=="><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person5')">More Info</button>
         <p id="person5" class="hidden">Ensures software quality and performance.</p>
@@ -188,14 +215,11 @@
 
     <section class="contact">
       <h2>Contact Us</h2>
-      <form
-  action="https://formspree.io/f/mldbrnwb"
-  method="POST"
->
-<input type="text" name="name" placeholder="Your name" required/>
-<input type="email" name="email" placeholder="Your Email" required/>
-<textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-<button type="submit">Send Message</button>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
