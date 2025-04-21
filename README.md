@@ -138,7 +138,7 @@
         <h2>Bijay Magar</h2>
         <p></p>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/roji__khadka_chhetri?igsh=MWtscmdsMzkxcTdyeQ=="><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person2')">More Info</button>
         <p id="person2" class="hidden">Expert in Node.js and MongoDB.</p>
