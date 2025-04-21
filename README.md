@@ -134,7 +134,7 @@
       <div class="card">
        
         <h2>Bijay Magar</h2>
-        <p></p>
+        <p>Project Manger</p>
         <div class="social-icons">
           <a href="https://www.instagram.com/bijaygharti_?igsh=MWl6NGxhNzZlbGptNw=="><i class="fab fa-instagram"></i></a>
         </div>
