@@ -1,4 +1,4 @@
-
+![download](https://github.com/user-attachments/assets/fb899e9e-a9b2-4b19-9af7-a14bc0d318bb)
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -134,7 +134,7 @@
         <p id="person1" class="hidden">Specializes in HTML, CSS, and React.</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Person 2" />
+        <img src="download.jpg" alt="Person 2" />
         <h2>Bijay Magar</h2>
         <p></p>
         <div class="social-icons">
@@ -144,7 +144,7 @@
         <p id="person2" class="hidden">Expert in Node.js and MongoDB.</p>
       </div>
       <div class="card">
-        <img src="download.jpg" alt="bijay.jpg" />
+        <img src="" alt="bijay.jpg" />
         <h2>Surya Bahadur KC</h2>
         <p></p>
         <div class="social-icons">
