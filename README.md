@@ -158,7 +158,7 @@
   <main>
     <section class="portfolio">
       <div class="card">
-        <img src="eldin.jpg" alt="Eldin Rajbhandari" />
+        
         <h2>Eldin Rajbhandari</h2>
         <p>Frontend Developer and Backend Developer</p>
         <div class="social-icons">
@@ -169,7 +169,7 @@
       </div>
 
       <div class="card">
-        <img src="bijay.jpg" alt="Bijay Magar" />
+        
         <h2>Bijay Magar</h2>
         <p></p>
         <div class="social-icons">
@@ -180,7 +180,7 @@
       </div>
 
       <div class="card">
-        <img src="surya.jpg" alt="Surya Bahadur KC" />
+       
         <h2>Surya Bahadur KC</h2>
         <p></p>
         <div class="social-icons">
@@ -191,7 +191,7 @@
       </div>
 
       <div class="card">
-        <img src="swopnil_k.jpg" alt="Swopnil Khadka" />
+       
         <h2>Swopnil Khadka</h2>
         <p></p>
         <div class="social-icons">
@@ -202,7 +202,7 @@
       </div>
 
       <div class="card">
-        <img src="swopnil_s.jpg" alt="Swopnil Shreesh" />
+       
         <h2>Swopnil Shreesh</h2>
         <p></p>
         <div class="social-icons">
