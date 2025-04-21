@@ -1,4 +1,3 @@
-![download](https://github.com/user-attachments/assets/fb899e9e-a9b2-4b19-9af7-a14bc0d318bb)
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
