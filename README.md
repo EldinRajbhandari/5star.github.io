@@ -123,7 +123,6 @@
   <main>
     <section class="portfolio">
       <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Person 1" />
         <h2>Eldin Rajbhandari</h2>
         <p>Frontend Developer and Backend Developer</p>
         <div class="social-icons">
@@ -133,7 +132,7 @@
         <p id="person1" class="hidden">Specializes in HTML, CSS, and React.</p>
       </div>
       <div class="card">
-        <img src="download.jpg" alt="Person 2" />
+       
         <h2>Bijay Magar</h2>
         <p></p>
         <div class="social-icons">
@@ -143,7 +142,7 @@
         <p id="person2" class="hidden">Expert in Node.js and MongoDB.</p>
       </div>
       <div class="card">
-        <img src="" alt="bijay.jpg" />
+        
         <h2>Surya Bahadur KC</h2>
         <p></p>
         <div class="social-icons">
@@ -163,7 +162,7 @@
         <p id="person4" class="hidden">Manages team workflow and client communication.</p>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Person 5" />
+
         <h2>Swopnil Shreesh</h2>
         <p></p>
         <div class="social-icons">
