@@ -74,6 +74,10 @@
 <img src="https://via.placeholder.com/150" alt="Person 1" />
 <h2>Eldin Rajbhandari</h2>
 <p>Frontend Developer and Backend Developer</p>
+    <div class="social icon">
+    <a href="https://www.instagram.com/eldin_rajbhandari/"><i class="fab fa-instagram"></i>
+    </a>
+</div>
 <button onclick="showMore('person1')">More Info</button>
 <p id="person1" class="hidden">The Creator </p>
 </div>
