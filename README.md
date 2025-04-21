@@ -30,25 +30,38 @@
     .card {
       background: white;
       border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       padding: 1rem;
       width: 220px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.8s ease forwards;
+      opacity: 0;
     }
-    .card img {
-      width: 100%;
-      border-radius: 50%;
+    .card:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
-    .card button {
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
+    @keyframes fadeInUp {
+        from{
+            opacity: 0;
+            transform: translateY(0);
+        } 
     }
-    .card button:hover {
-      background: #0056b3;
+    .card img{
+        width: 100%;
+        border-radius: 50%;
+    }
+    .card button{
+        margin-top: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .card button:hover{
+        background-color: #0056b3;
     }
     .social-icons a {
       margin: 0 5px;
