@@ -128,7 +128,7 @@
         <h2>Eldin Rajbhandari</h2>
         <p>Frontend Developer and Backend Developer</p>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/eldin_rajbhandari?igsh=MWd3dzh0ZWxjcnV6ag=="><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person1')">More Info</button>
         <p id="person1" class="hidden">Specializes in HTML, CSS, and React.</p>
