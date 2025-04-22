@@ -11,7 +11,10 @@
       background: #f9f9f9;
       margin: 0;
       padding: 0;
-      text-align: center;
+      text-align: center; 
+      background-color: #121212;
+      color: #f1f1f1;
+      
     }
     #loader {
       position: fixed;
@@ -36,8 +39,8 @@
       100% { transform: rotate(360deg); }
     }
     header {
-      background: #333;
-      color: #fff;
+      background: #1a1a1a;
+      color: #f1f1f1;
       padding: 1rem 2rem;
     }
     .portfolio {
@@ -56,6 +59,8 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       animation: fadeInUp 0.8s ease forwards;
       opacity: 0;
+      background-color: #1e1e1e;
+      color: #f1f1f1;
     }
     .card:hover {
       transform: translateY(-10px);
@@ -127,8 +132,8 @@
       background: #218838;
     }
     footer {
-      background: #222;
-      color: #ccc;
+      background: #1a1a1a;
+      color: #f1f1f1;
       padding: 1rem;
     }
     @media (max-width: 768px) {
