@@ -160,7 +160,7 @@
 <section class="portfolio">
     <div class="card">
         <h2>Eldin Rajbhandari</h2>
-         <p>Frontend Developer and Backend Developer</p>
+         <p></p>
          <div class="social-icons">
            <a href="https://www.instagram.com/eldin_rajbhandari?igsh=MTl3ODl0bGR2Z2czdg==" target="_blank"><i class="fab fa-instagram"></i></a>
          </div>
