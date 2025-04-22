@@ -159,7 +159,6 @@
   <main style="display:none;" id="mainContent">
     <section class="portfolio">
       <div class="card">
-    
         <h2>Eldin Rajbhandari</h2>
         <p>Frontend Developer and Backend Developer</p>
         <div class="social-icons">
@@ -168,9 +167,7 @@
         <button onclick="showMore('person1')">More Info</button>
         <p id="person1" class="hidden">Specializes in HTML, CSS, and React.</p>
       </div>
-
-      <div class="card">
-      
+      <div class="card">  
         <h2>Bijay Magar</h2>
         <p></p>
         <div class="social-icons">
@@ -179,9 +176,7 @@
         <button onclick="showMore('person2')">More Info</button>
         <p id="person2" class="hidden">Expert in Node.js and MongoDB.</p>
       </div>
-
       <div class="card">
-       
         <h2>Surya Bahadur KC</h2>
         <p></p>
         <div class="social-icons">
@@ -190,9 +185,7 @@
         <button onclick="showMore('person3')">More Info</button>
         <p id="person3" class="hidden">Focuses on user-centered design and prototyping.</p>
       </div>
-
       <div class="card">
-       
         <h2>Swopnil Khadka</h2>
         <p></p>
         <div class="social-icons">
@@ -201,9 +194,7 @@
         <button onclick="showMore('person4')">More Info</button>
         <p id="person4" class="hidden">Manages team workflow and client communication.</p>
       </div>
-
       <div class="card">
-        
         <h2>Swopnil Shreesh</h2>
         <p></p>
         <div class="social-icons">
@@ -213,7 +204,6 @@
         <p id="person5" class="hidden">Ensures software quality and performance.</p>
       </div>
     </section>
-
     <section class="contact">
       <h2>Contact Us</h2>
       <form action="https://formspree.io/f/your-form-id" method="POST">
