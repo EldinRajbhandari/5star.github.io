@@ -206,7 +206,7 @@
         <p id="person2" class="hidden">Expert in Node.js and MongoDB.</p>
       </div>
       <div class="card">
-        <h2>Surya Bahadur KC(Ukesh)</h2>
+        <h2>Surya Bahadur KC  (Ukesh)</h2>
         <p></p>
         <div class="social-icons">
           <a href="https://www.instagram.com/ukesh__cheetri?igsh=ZTNqYzZ3Zzd0OTk1" target="_blank"><i class="fab fa-instagram"></i></a>
