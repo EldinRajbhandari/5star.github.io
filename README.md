@@ -159,55 +159,55 @@
   <main style="display:none;" id="mainContent">
     <section class="portfolio">
       <div class="card">
-        <img src="eldin.jpg" alt="Eldin Rajbhandari" />
+    
         <h2>Eldin Rajbhandari</h2>
         <p>Frontend Developer and Backend Developer</p>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/eldin_rajbhandari?igsh=MTl3ODl0bGR2Z2czdg==" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person1')">More Info</button>
         <p id="person1" class="hidden">Specializes in HTML, CSS, and React.</p>
       </div>
 
       <div class="card">
-        <img src="bijay.jpg" alt="Bijay Magar" />
+      
         <h2>Bijay Magar</h2>
         <p></p>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/bijaygharti_?igsh=dWV1N3R5dWNzOGlw" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person2')">More Info</button>
         <p id="person2" class="hidden">Expert in Node.js and MongoDB.</p>
       </div>
 
       <div class="card">
-        <img src="surya.jpg" alt="Surya Bahadur KC" />
+       
         <h2>Surya Bahadur KC</h2>
         <p></p>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/ukesh__cheetri?igsh=ZTNqYzZ3Zzd0OTk1" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person3')">More Info</button>
         <p id="person3" class="hidden">Focuses on user-centered design and prototyping.</p>
       </div>
 
       <div class="card">
-        <img src="swopnil_k.jpg" alt="Swopnil Khadka" />
+       
         <h2>Swopnil Khadka</h2>
         <p></p>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/swopnil__09?igsh=MXdvdzF3NWxrcjBlNA==" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person4')">More Info</button>
         <p id="person4" class="hidden">Manages team workflow and client communication.</p>
       </div>
 
       <div class="card">
-        <img src="swopnil_s.jpg" alt="Swopnil Shreesh" />
+        
         <h2>Swopnil Shreesh</h2>
         <p></p>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/swopnil_shreesh?igsh=MWI3bzF5eTJrb3RjeA==" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         <button onclick="showMore('person5')">More Info</button>
         <p id="person5" class="hidden">Ensures software quality and performance.</p>
