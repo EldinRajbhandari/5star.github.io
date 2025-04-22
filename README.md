@@ -197,7 +197,7 @@
         <p id="person1" class="hidden">Specializes in HTML, CSS, and React.</p>
       </div>
       <div class="card">  
-        <h2>Bijay Magar</h2>
+        <h2>Bijaya Gharti Magar</h2>
         <p></p>
         <div class="social-icons">
           <a href="https://www.instagram.com/bijaygharti_?igsh=dWV1N3R5dWNzOGlw" target="_blank"><i class="fab fa-instagram"></i></a>
