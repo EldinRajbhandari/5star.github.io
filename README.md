@@ -191,7 +191,7 @@
            <a href="https://www.instagram.com/swopnil__09?igsh=MXdvdzF3NWxrcjBlNA==" target="_blank"><i class="fab fa-instagram"></i></a>
          </div>
          <button onclick="showMore('person4')">More Info</button>
-         <p id="person4" class="hidden">A is Active in Studies and is Expert in Mathematics!😂</p>
+         <p id="person4" class="hidden">Active in Studies and is Expert in Mathematics!😂</p>
        </div>
        <div class="card">
          <h2>Swopnil Shreesh</h2>
