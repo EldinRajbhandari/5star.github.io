@@ -200,7 +200,7 @@
            <a href="https://www.instagram.com/swopnil_shreesh?igsh=MWI3bzF5eTJrb3RjeA==" target="_blank"><i class="fab fa-instagram"></i></a>
          </div>
          <button onclick="showMore('person5')">More Info</button>
-         <p id="person5" class="hidden">Playing Guitar since the of 10.His Guitar play sounds really Mindblowing🎸</p>
+         <p id="person5" class="hidden">Playing Guitar since the age of 10.His Guitar play sounds really Mindblowing🎸</p>
        </div>
 <!-- Add more team member cards here -->
 </section>
