@@ -164,7 +164,7 @@
            <a href="https://www.instagram.com/eldin_rajbhandari?igsh=MTl3ODl0bGR2Z2czdg==" target="_blank"><i class="fab fa-instagram"></i></a>
          </div>
          <button onclick="showMore('person1')">More Info</button>
-         <p id="person1" class="hidden">Specializes in HTML, CSS, and React.</p>
+         <p id="person1" class="hidden">😂😂Specializes in HTML, CSS, and React.</p>
        </div>
        <div class="card">  
          <h2>Bijaya Gharti Magar</h2>
