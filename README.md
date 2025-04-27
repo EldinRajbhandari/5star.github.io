@@ -159,12 +159,12 @@
 <section class="portfolio">
     <div class="card">
         <h2>Eldin Rajbhandari</h2>
-         <p>😂😂</p>
+         <p></p>
          <div class="social-icons">
            <a href="https://www.instagram.com/eldin_rajbhandari?igsh=MTl3ODl0bGR2Z2czdg==" target="_blank"><i class="fab fa-instagram"></i></a>
          </div>
          <button onclick="showMore('person1')">More Info</button>
-         <p id="person1" class="hidden">😂😂Specializes in HTML, CSS, and React.</p>
+         <p id="person1" class="hidden">Specializes in HTML and CSS.</p>
        </div>
        <div class="card">  
          <h2>Bijaya Gharti Magar</h2>
@@ -173,7 +173,7 @@
            <a href="https://www.instagram.com/bijaygharti_?igsh=dWV1N3R5dWNzOGlw" target="_blank"><i class="fab fa-instagram"></i></a>
          </div>
          <button onclick="showMore('person2')">More Info</button>
-         <p id="person2" class="hidden">Expert in Node.js and MongoDB.</p>
+         <p id="person2" class="hidden">A Very Awesome Futsal player having more than 4+ years of experience!</p>
        </div>
        <div class="card">
          <h2>Surya Bahadur KC  (Ukesh)</h2>
@@ -182,7 +182,7 @@
            <a href="https://www.instagram.com/ukesh__cheetri?igsh=ZTNqYzZ3Zzd0OTk1" target="_blank"><i class="fab fa-instagram"></i></a>
          </div>
          <button onclick="showMore('person3')">More Info</button>
-         <p id="person3" class="hidden">Focuses on user-centered design and prototyping.</p>
+         <p id="person3" class="hidden">Expert in Mobile/PC GAMING. He plays video games really NICE!</p>
        </div>
        <div class="card">
          <h2>Swopnil Khadka</h2>
@@ -191,7 +191,7 @@
            <a href="https://www.instagram.com/swopnil__09?igsh=MXdvdzF3NWxrcjBlNA==" target="_blank"><i class="fab fa-instagram"></i></a>
          </div>
          <button onclick="showMore('person4')">More Info</button>
-         <p id="person4" class="hidden">Manages team workflow and client communication.</p>
+         <p id="person4" class="hidden">A is Active in Studies and is Expert in Mathematics!😂</p>
        </div>
        <div class="card">
          <h2>Swopnil Shreesh</h2>
@@ -200,7 +200,7 @@
            <a href="https://www.instagram.com/swopnil_shreesh?igsh=MWI3bzF5eTJrb3RjeA==" target="_blank"><i class="fab fa-instagram"></i></a>
          </div>
          <button onclick="showMore('person5')">More Info</button>
-         <p id="person5" class="hidden">Ensures software quality and performance.</p>
+         <p id="person5" class="hidden">Playing Guitar since the of 10.His Guitar play sounds really Mindblowing</p>
        </div>
 <!-- Add more team member cards here -->
 </section>
