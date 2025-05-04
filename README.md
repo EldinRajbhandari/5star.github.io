@@ -182,7 +182,7 @@
            <a href="https://www.instagram.com/ukesh__cheetri?igsh=ZTNqYzZ3Zzd0OTk1" target="_blank"><i class="fab fa-instagram"></i></a>
          </div>
          <button onclick="showMore('person3')">More Info</button>
-         <p id="person3" class="hidden">Expert in Mobile/PC GAMING. He plays video games really NICE!🎮</p>
+         <p id="person3" class="hidden">Expert in Sports and physical activity</p>
        </div>
        <div class="card">
          <h2>Swopnil Khadka</h2>
