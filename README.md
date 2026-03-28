@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Starry Night Typing Test</title>
 <style>
-  /* Body & Background */
   body {
     font-family: 'Courier New', monospace;
     margin: 0;
@@ -19,7 +18,6 @@
     position: relative;
   }
 
-  /* Swirling Stars */
   .star {
     position: absolute;
     border-radius: 50%;
@@ -35,7 +33,6 @@
     100% { transform: rotate(720deg) translate(0,0); opacity: 0.8; }
   }
 
-  /* Container */
   .container {
     position: relative;
     z-index: 1;
@@ -47,7 +44,6 @@
     box-shadow: 0 0 25px rgba(255,255,150,0.3);
   }
 
-  /* Text Display */
   #text-display {
     font-size: 18px;
     line-height: 1.6;
@@ -58,7 +54,6 @@
   .correct { color: #22c55e; }
   .incorrect { color: #ef4444; text-decoration: underline; }
 
-  /* Input */
   textarea {
     width: 100%;
     padding: 10px;
@@ -74,7 +69,6 @@
     box-shadow: inset 0 0 5px rgba(255,255,200,0.5);
   }
 
-  /* Info & Controls */
   .info {
     display: flex;
     justify-content: space-between;
@@ -122,12 +116,12 @@
       <option value="medium" selected>Medium</option>
       <option value="hard">Hard</option>
     </select>
-    <button onclick="startTest()">Start</button>
+    <button id="start-btn">Start</button>
+    <button id="restart-btn">Restart</button>
   </div>
 </div>
 
 <script>
-  /* Typing Words */
   const wordSets = {
     easy: ["cat","dog","sun","book","pen","tree","fish","milk","home","car","red","blue","run","jump","ball"],
     medium: ["typing","keyboard","screen","random","simple","design","focus","practice","coding","input","output","system"],
@@ -142,6 +136,8 @@
   const wpmDisplay = document.getElementById("wpm");
   const accuracyDisplay = document.getElementById("accuracy");
   const difficultySelect = document.getElementById("difficulty");
+  const startBtn = document.getElementById("start-btn");
+  const restartBtn = document.getElementById("restart-btn");
 
   function generateWords(n = 25) {
     const mode = difficultySelect.value;
@@ -165,10 +161,8 @@
     input.disabled = false;
     input.value = "";
     input.focus();
-
     totalTyped = 0;
     loadWords();
-
     timer = 60;
     timeDisplay.innerText = timer;
 
@@ -183,58 +177,61 @@
     }, 1000);
   }
 
-  input.addEventListener("keydown", e => {
-    if (e.key === "Backspace") e.preventDefault();
-  });
+  function restartTest() {
+    clearInterval(interval);
+    input.disabled = true;
+    input.value = "";
+    totalTyped = 0;
+    timeDisplay.innerText = 60;
+    wpmDisplay.innerText = 0;
+    accuracyDisplay.innerText = 100;
+    textDisplay.innerHTML = "";
+  }
 
+  input.addEventListener("keydown", e => { if(e.key === "Backspace") e.preventDefault(); });
   document.addEventListener("copy", e => e.preventDefault());
   document.addEventListener("contextmenu", e => e.preventDefault());
 
   input.addEventListener("input", () => {
     const entered = input.value.split("");
     const spans = textDisplay.querySelectorAll("span");
-
     let correct = 0;
-    spans.forEach((span, i) => {
+
+    spans.forEach((span,i) => {
       const char = entered[i];
-      if (char == null) {
-        span.className = "";
-      } else if (char === span.innerText) {
-        span.className = "correct"; // green
-        correct++;
-      } else {
-        span.className = "incorrect"; // red
-      }
+      if(char == null) span.className = "";
+      else if(char === span.innerText){ span.className = "correct"; correct++; }
+      else span.className = "incorrect";
     });
 
-    accuracyDisplay.innerText = ((correct / entered.length) * 100 || 0).toFixed(0);
-
+    accuracyDisplay.innerText = ((correct/entered.length)*100 || 0).toFixed(0);
     totalTyped++;
-    const wpm = Math.round((totalTyped / 5) / ((60 - timer) / 60) || 0);
+    const wpm = Math.round((totalTyped/5)/((60-timer)/60) || 0);
     wpmDisplay.innerText = wpm;
 
-    if (entered.length === currentText.length) {
+    if(entered.length === currentText.length){
       input.value = "";
       loadWords();
     }
   });
 
-  /* Create swirling stars dynamically */
-  function createStars(count = 50) {
-    for (let i = 0; i < count; i++) {
+  startBtn.addEventListener("click", startTest);
+  restartBtn.addEventListener("click", restartTest);
+
+  function createStars(count = 50){
+    for(let i=0;i<count;i++){
       const star = document.createElement("div");
       star.classList.add("star");
-      star.style.width = `${Math.random()*3 + 1}px`;
-      star.style.height = `${Math.random()*3 + 1}px`;
+      star.style.width = `${Math.random()*3+1}px`;
+      star.style.height = `${Math.random()*3+1}px`;
       star.style.left = `${Math.random()*100}%`;
       star.style.top = `${Math.random()*100}%`;
-      star.style.animationDuration = `${Math.random()*10 + 5}s`;
+      star.style.animationDuration = `${Math.random()*10+5}s`;
       document.body.appendChild(star);
     }
   }
 
-  createStars(70); // number of stars
+  createStars(70);
 </script>
-
 </body>
 </html>
