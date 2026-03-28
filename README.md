@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  
+  <!-- ✅ Important for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Typing Speed Test</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,23 +17,29 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      margin: 0;
     }
 
     .container {
-      width: 700px;
+      width: 95%;
+      max-width: 700px;
       text-align: center;
       background: #1e293b;
-      padding: 20px;
+      padding: 15px;
       border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
     }
 
     #text-display {
-      margin: 20px 0;
-      font-size: 20px;
-      line-height: 1.8;
+      margin: 15px 0;
+      font-size: 18px;
+      line-height: 1.6;
       word-wrap: break-word;
-
-      /* 🚫 Disable text selection */
       user-select: none;
     }
 
@@ -43,28 +54,53 @@
 
     textarea {
       width: 100%;
-      height: 100px;
+      height: 90px;
       padding: 10px;
-      font-size: 16px;
+      font-size: 16px; /* prevents zoom on iOS */
       border-radius: 5px;
       border: none;
       outline: none;
+      box-sizing: border-box;
     }
 
     .stats {
-      margin-top: 15px;
+      margin-top: 10px;
       display: flex;
       justify-content: space-between;
+      font-size: 14px;
     }
 
     button {
-      margin-top: 15px;
-      padding: 10px 20px;
+      margin-top: 10px;
+      padding: 10px;
+      width: 48%;
       border: none;
       background: #3b82f6;
       color: white;
       border-radius: 5px;
       cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    /* 📱 Extra small screens */
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 18px;
+      }
+
+      #text-display {
+        font-size: 16px;
+      }
+
+      textarea {
+        height: 80px;
+      }
     }
   </style>
 </head>
@@ -83,8 +119,10 @@
     <p>Accuracy: <span id="accuracy">100</span>%</p>
   </div>
 
-  <button onclick="startTest()">Start Test</button>
-  <button onclick="resetTest()">Restart</button>
+  <div class="btn-group">
+    <button onclick="startTest()">Start</button>
+    <button onclick="resetTest()">Restart</button>
+  </div>
 </div>
 
 <script>
@@ -156,7 +194,7 @@
     }
   });
 
-  // ❌ Disable copy, select, right-click shortcuts
+  // ❌ Disable shortcuts
   document.addEventListener("keydown", (e) => {
     if (e.ctrlKey && (
       e.key === "c" ||
@@ -192,18 +230,15 @@
       }
     });
 
-    // Accuracy
     const accuracy = ((correct / enteredText.length) * 100 || 0).toFixed(2);
     accuracyDisplay.innerText = accuracy;
 
-    // WPM
     totalTyped++;
     const wordsTyped = totalTyped / 5;
     const timePassed = 60 - timer;
     const wpm = Math.round(wordsTyped / (timePassed / 60) || 0);
     wpmDisplay.innerText = wpm;
 
-    // 🔄 Load new words automatically
     if (enteredText.length === currentText.length) {
       input.value = "";
       loadWords();
