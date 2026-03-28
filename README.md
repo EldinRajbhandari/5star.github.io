@@ -1,260 +1,226 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Team Portfolio</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<style>
+  <meta charset="UTF-8">
+  <title>Typing Speed Test</title>
+  <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #f1f1f1;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      overflow-x: hidden;
-    }
-
-    #particles-js {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-
-    header {
-      background: #1c1c1c;
+      background: #0f172a;
       color: #fff;
-      padding: 1rem 2rem;
-    }
-
-    .portfolio {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 1.5rem;
-      padding: 2rem;
+      align-items: center;
+      height: 100vh;
     }
 
-    .card {
-      background: #1e1e1e;
-      color: #f1f1f1;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-      padding: 1rem;
-      width: 220px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .container {
+      width: 700px;
+      text-align: center;
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 30px rgba(0, 255, 204, 0.2);
+    #text-display {
+      margin: 20px 0;
+      font-size: 20px;
+      line-height: 1.8;
+      word-wrap: break-word;
+
+      /* 🚫 Disable text selection */
+      user-select: none;
     }
 
-    .card img {
+    .correct {
+      color: #22c55e;
+    }
+
+    .incorrect {
+      color: #ef4444;
+      text-decoration: underline;
+    }
+
+    textarea {
       width: 100%;
-      border-radius: 50%;
-    }
-
-    .card button {
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
-      background: #00b894;
-      color: white;
+      height: 100px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
       border: none;
-      border-radius: 4px;
-      cursor: pointer;
+      outline: none;
     }
 
-    .card button:hover {
-      background: #019875;
-    }
-
-    .social-icons a {
-      margin: 0 5px;
-      color: #f1f1f1;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
-
-    .social-icons a:hover {
-      color: #00ffcc;
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    .contact {
-      padding: 2rem;
-      background: #1a1a1a;
-    }
-
-    .contact form {
-      max-width: 400px;
-      margin: 0 auto;
+    .stats {
+      margin-top: 15px;
       display: flex;
-      flex-direction: column;
-      gap: 1rem;
+      justify-content: space-between;
     }
 
-    .contact input, .contact textarea {
-      padding: 0.8rem;
-      border-radius: 5px;
-      border: 1px solid #444;
-      background: #2a2a2a;
-      color: #f1f1f1;
-    }
-
-    .contact button {
-      padding: 0.8rem;
-      background: #00b894;
-      color: white;
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
       border: none;
+      background: #3b82f6;
+      color: white;
       border-radius: 5px;
       cursor: pointer;
     }
-
-    .contact button:hover {
-      background: #019875;
-    }
-
-    footer {
-      background: #111;
-      color: #aaa;
-      padding: 1rem;
-    }
-
-    
-
-    @media (max-width: 768px) {
-      .portfolio {
-        flex-direction: column;
-        align-items: center;
-      }
-      .card {
-        width: 90%;
-      }
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-      .contact form {
-        width: 90%;
-      }
-    }
-</style>
+  </style>
 </head>
 <body>
-<div id="particles-js"></div>
 
-<header>
-<h1><span id="typed"></span></h1>
-</header>
+<div class="container">
+  <h1>Typing Speed Test</h1>
+  <p>Time Left: <span id="time">60</span>s</p>
 
-<main>
-<section class="portfolio">
-    <div class="card">
-        <h2>Eldin Rajbhandari</h2>
-         <p></p>
-         <div class="social-icons">
-           <a href="https://www.instagram.com/eldin_rajbhandari?igsh=MTl3ODl0bGR2Z2czdg==" target="_blank"><i class="fab fa-instagram"></i></a>
-         </div>
-         <button onclick="showMore('person1')">More Info</button>
-         <p id="person1" class="hidden">Specializes in HTML,CSS and technical field🧑🏻‍💻</p>
-       </div>
-       <div class="card">  
-         <h2>Bijaya Gharti Magar</h2>
-         <p></p>
-         <div class="social-icons">
-           <a href="https://www.instagram.com/bijaygharti_?igsh=dWV1N3R5dWNzOGlw" target="_blank"><i class="fab fa-instagram"></i></a>
-         </div>
-         <button onclick="showMore('person2')">More Info</button>
-         <p id="person2" class="hidden">A Very Awesome Futsal player having more than 4+ years of experience!⚽</p>
-       </div>
-       <div class="card">
-         <h2>Surya Bahadur KC  (Ukesh)</h2>
-         <p></p>
-         <div class="social-icons">
-           <a href="https://www.instagram.com/ukesh__cheetri?igsh=ZTNqYzZ3Zzd0OTk1" target="_blank"><i class="fab fa-instagram"></i></a>
-         </div>
-         <button onclick="showMore('person3')">More Info</button>
-         <p id="person3" class="hidden">Expert in Sports and physical activity🏀</p>
-       </div>
-       <div class="card">
-         <h2>Swopnil Khadka</h2>
-         <p></p>
-         <div class="social-icons">
-           <a href="https://www.instagram.com/swopnil__09?igsh=MXdvdzF3NWxrcjBlNA==" target="_blank"><i class="fab fa-instagram"></i></a>
-         </div>
-         <button onclick="showMore('person4')">More Info</button>
-         <p id="person4" class="hidden">Active in Studies and is Expert in Mathematics!📖</p>
-       </div>
-       <div class="card">
-         <h2>Swopnil Shreesh</h2>
-         <p></p>
-         <div class="social-icons">
-           <a href="https://www.instagram.com/swopnil_shreesh?igsh=MWI3bzF5eTJrb3RjeA==" target="_blank"><i class="fab fa-instagram"></i></a>
-         </div>
-         <button onclick="showMore('person5')">More Info</button>
-         <p id="person5" class="hidden">Playing Guitar since the age of 10.His Guitar play sounds really Mindblowing🎸</p>
-       </div>
-<!-- Add more team member cards here -->
-</section>
+  <div id="text-display"></div>
 
-<section class="contact">
-<h2>Contact Us</h2>
-<form action="https://formspree.io/f/mldbrnwb" method="POST">
-<input type="text" name="name" placeholder="Your Name" required />
-<input type="email" name="email" placeholder="Your Email" required />
-<textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-<button type="submit">Send Message</button>
-</form>
-</section>
-</main>
+  <textarea id="input" placeholder="Start typing..." disabled></textarea>
 
-<footer>
-<p>&copy; 2025 5 Star Team. All rights reserved.</p>
-</footer>
+  <div class="stats">
+    <p>WPM: <span id="wpm">0</span></p>
+    <p>Accuracy: <span id="accuracy">100</span>%</p>
+  </div>
 
-
+  <button onclick="startTest()">Start Test</button>
+  <button onclick="resetTest()">Restart</button>
+</div>
 
 <script>
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 60, density: { enable: true, value_area: 800 } },
-        color: { value: "#00ffcc" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5 },
-        size: { value: 3 },
-        line_linked: { enable: true, distance: 150, color: "#00ffcc", opacity: 0.4, width: 1 },
-        move: { enable: true, speed: 3 }
-      },
-      interactivity: {
-        events: {
-          onhover: { enable: true, mode: "repulse" },
-          onclick: { enable: true, mode: "push" }
-        }
+  const words = [
+    "speed","keyboard","javascript","practice","focus","typing",
+    "accuracy","challenge","developer","screen","random","words",
+    "performance","coding","function","variable","design","input",
+    "output","monitor","skill","progress","system","dynamic"
+  ];
+
+  let timer = 60;
+  let interval = null;
+  let currentText = "";
+  let totalTyped = 0;
+
+  const textDisplay = document.getElementById("text-display");
+  const input = document.getElementById("input");
+  const timeDisplay = document.getElementById("time");
+  const wpmDisplay = document.getElementById("wpm");
+  const accuracyDisplay = document.getElementById("accuracy");
+
+  function generateWords(count = 30) {
+    let result = [];
+    for (let i = 0; i < count; i++) {
+      result.push(words[Math.floor(Math.random() * words.length)]);
+    }
+    return result.join(" ");
+  }
+
+  function loadWords() {
+    currentText = generateWords();
+    textDisplay.innerHTML = "";
+
+    currentText.split("").forEach(char => {
+      const span = document.createElement("span");
+      span.innerText = char;
+      textDisplay.appendChild(span);
+    });
+  }
+
+  function startTest() {
+    input.disabled = false;
+    input.value = "";
+    input.focus();
+
+    totalTyped = 0;
+    loadWords();
+
+    timer = 60;
+    timeDisplay.innerText = timer;
+
+    if (interval) clearInterval(interval);
+
+    interval = setInterval(() => {
+      timer--;
+      timeDisplay.innerText = timer;
+
+      if (timer === 0) {
+        clearInterval(interval);
+        input.disabled = true;
+      }
+    }, 1000);
+  }
+
+  // ❌ Disable Backspace
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Backspace") {
+      e.preventDefault();
+    }
+  });
+
+  // ❌ Disable copy, select, right-click shortcuts
+  document.addEventListener("keydown", (e) => {
+    if (e.ctrlKey && (
+      e.key === "c" ||
+      e.key === "x" ||
+      e.key === "a" ||
+      e.key === "u"
+    )) {
+      e.preventDefault();
+    }
+  });
+
+  document.addEventListener("copy", (e) => e.preventDefault());
+  document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+  input.addEventListener("input", () => {
+    const enteredText = input.value.split("");
+    const spans = textDisplay.querySelectorAll("span");
+
+    let correct = 0;
+
+    spans.forEach((span, index) => {
+      const char = enteredText[index];
+
+      if (char == null) {
+        span.classList.remove("correct", "incorrect");
+      } else if (char === span.innerText) {
+        span.classList.add("correct");
+        span.classList.remove("incorrect");
+        correct++;
+      } else {
+        span.classList.add("incorrect");
+        span.classList.remove("correct");
       }
     });
 
-    var typed = new Typed("#typed", {
-      strings: ["5 Star Team"],
-      typeSpeed: 100,
-      backSpeed: 50,
-      loop: true
-    });
+    // Accuracy
+    const accuracy = ((correct / enteredText.length) * 100 || 0).toFixed(2);
+    accuracyDisplay.innerText = accuracy;
 
-    function showMore(id) {
-      document.getElementById(id).classList.toggle("hidden");
-    }
+    // WPM
+    totalTyped++;
+    const wordsTyped = totalTyped / 5;
+    const timePassed = 60 - timer;
+    const wpm = Math.round(wordsTyped / (timePassed / 60) || 0);
+    wpmDisplay.innerText = wpm;
 
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    // 🔄 Load new words automatically
+    if (enteredText.length === currentText.length) {
+      input.value = "";
+      loadWords();
     }
+  });
+
+  function resetTest() {
+    clearInterval(interval);
+    timer = 60;
+    timeDisplay.innerText = timer;
+    input.value = "";
+    input.disabled = true;
+    textDisplay.innerHTML = "";
+    wpmDisplay.innerText = 0;
+    accuracyDisplay.innerText = 100;
+  }
 </script>
+
 </body>
 </html>
